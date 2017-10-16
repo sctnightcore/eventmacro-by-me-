@@ -1,0 +1,39 @@
+
+#######################
+#		Priest		  #
+#######################
+automacro Priestbuffoutmap {
+	InMap priestsavemap
+	PrivMsg /buff/i
+	call {
+		do stand
+		move waitmastermap x y 
+		do sp 34 $.PrivMsgLastName #bless
+		do sp 29 $.PrivMsgLastName #agi
+		do sp 73 $.PrivMsgLastName #kyrie
+		log =======================
+		log == BLESS BUFF OK ! ==== 
+		log == INC AGI BUFF OK ! ==
+		log == KYRIE BUFF OK ! ====
+		log =======================
+		pause 2
+		do move priestmapsave x y 
+		do sit
+		log == Priestbuffsave ==
+}
+
+
+#######################
+#		master		  #
+#######################
+automacro masterbot {
+	CheckOnAI manual
+	StatusInactiveHandle EFST_BLESSING,EFST_INC_AGI,EFST_KYRIE
+	call {
+		do move priestwait x y
+		pm Priestbuffoutmap buff
+		pause 5
+		CheckOnAI auto
+		log == masterbuffOK!GO! ==
+	}
+}
