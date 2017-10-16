@@ -1,0 +1,9 @@
+automacro support {
+	PubMsgName /ab|agi|buff/i 
+	call {
+		do sp 34 $.PubMsgNameLastName #bless
+		do sp 29 $.PubMsgNameLastName #agi
+		log == FREE AB AGI ! ==
+	}
+}
+
