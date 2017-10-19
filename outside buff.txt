@@ -27,9 +27,9 @@ automacro Priestbuffoutmap {
 #		master		  #
 #######################
 automacro masterbot {
-	CheckOnAI manual
 	StatusInactiveHandle EFST_BLESSING,EFST_INC_AGI,EFST_KYRIE
 	call {
+		CheckOnAI manual
 		do move priestwait x y
 		pm Priestbuffoutmap buff
 		pause 5
