@@ -1,0 +1,6 @@
+automacro aibuyandsellreset {
+      SimpleHookEvent AI_sell_auto_complete,AI_buy_auto_done
+      call {
+           do ai clear
+           }
+      }     
