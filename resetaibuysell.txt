@@ -1,7 +1,15 @@
 automacro aibuyandsellreset {
-      SimpleHookEvent AI_sell_auto_complete,AI_buy_auto_done
+      SimpleHookEvent AI_sell_auto_complete
       call {
            do ai clear
-           log reset ai buy/sell
+           log reset ai sell
            }
-      }     
+}     
+
+automacro aibuyandbuyreset {
+      SimpleHookEvent AI_buy_auto_done
+      call {
+           do ai clear
+           log reset ai buy
+           }
+}     
