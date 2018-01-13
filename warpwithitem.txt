@@ -1,8 +1,8 @@
 automacro warpwithitem {
 SimpleHookEvent AI/lockMap
-$itemwarp = warp_item
-$where = morocc
 call {
+      $itemwarp = warp_item
+      $where = morocc
       do is $itemwarp
       talk resp r~/$where/i
       log go go $where
