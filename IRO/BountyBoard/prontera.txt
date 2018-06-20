@@ -83,16 +83,16 @@ timeout 120
 QuestHuntCompleted 62819 1138,62737 1100,62738 1494,62739 1166
 #Magnolia,Argos,Beetle King,Savage
 call {
-    if (&questCompleteCount(62569) == 1) { #Magnolia
+    if (&questCompleteCount(62819) == 1) { #Magnolia
 		call quest_talk prontera '140 229' "c r0 c r~/Magnolia/i"
 		}
-	if (&questCompleteCount(62645) == 1) { #Argos
+	if (&questCompleteCount(62737) == 1) { #Argos
 		call quest_talk prontera '140 229' "c r0 c r~/Argos/i"
 		}
-	if (&questCompleteCount(62562) == 1) { #Beetle King
+	if (&questCompleteCount(62738) == 1) { #Beetle King
 		call quest_talk prontera '140 229' "c r0 c r~/Beetle King/i"
 		}
-	if (&questCompleteCount() == 1) { #Savage
+	if (&questCompleteCount(62739) == 1) { #Savage
 		call quest_talk prontera '140 229' "c r0 c r~/Savage/i"
 		}
 	}
@@ -105,19 +105,19 @@ timeout 120
 QuestHuntCompleted 62740 1380,62741 1035,62742 1139,62743 1037,62744 1099
 #Driller,Hunter Fly,Mantis,Side Winder,Argiope
 call {
-    if (&questCompleteCount(62648) == 1) { #Driller
+    if (&questCompleteCount(62740) == 1) { #Driller
 		call quest_talk prontera '142 231' "c r0 c r~/Driller/i"
 		}
-	if (&questCompleteCount(62649) == 1) { #Hunter Fly
+	if (&questCompleteCount(62741) == 1) { #Hunter Fly
 		call quest_talk prontera '142 231' "c r0 c r~/Hunter Fly/i"
 		}
-	if (&questCompleteCount(62650) == 1) { #Mantis
+	if (&questCompleteCount(62742) == 1) { #Mantis
 		call quest_talk prontera '142 231' "c r0 c r~/Mantis/i"
 		}
-	if (&questCompleteCount(62650) == 1) { #Side Winder
+	if (&questCompleteCount(62743) == 1) { #Side Winder
 		call quest_talk prontera '142 231' "c r0 c r~/Side Winder/i"
 		}
-	if (&questCompleteCount(62650) == 1) { #Argiope
+	if (&questCompleteCount(62744) == 1) { #Argiope
 		call quest_talk prontera '142 231' "c r0 c r~/Argiope/i"
 		}		
 	}
