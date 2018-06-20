@@ -1,0 +1,95 @@
+#########################################################
+#	┌─┐┌─┐┌┬┐┌┐┌┬┌─┐┬ ┬┌┬┐┌─┐┌─┐┬─┐┌─┐
+#	└─┐│   │ │││││ ┬├─┤ │ │  │ │├┬┘├┤ 
+#	└─┘└─┘ ┴ ┘└┘┴└─┘┴ ┴ ┴ └─┘└─┘┴└─└─┘
+#
+#	add : !include ..\BountyBoard\payon.txt
+#########################################################
+automacro payon1_20 {
+exclusive 1
+timeout 120
+BaseLevel 1..20
+QuestActive 62644,62565,62566 #willow,spore,boa
+call {
+    if (&questCompleteCount(62681) == 1) { #willow
+		call quest_talk payon '147 95' "c r0 c r~/Willow/i"
+		}
+	if (&questCompleteCount(62565) == 1) { #spore
+		call quest_talk payon '147 95' "c r0 c r~/Spore/i"
+		}
+	if (&questCompleteCount(62566) == 1) { #boa
+		call quest_talk payon '147 95' "c r0 c r~/Boa/i"
+		}		
+	}
+}
+
+automacro payon21_50 {
+exclusive 1
+BaseLevel 21..50
+timeout 120
+QuestActive 62567,62666,62560,62561 #Bigfoot,Horn,Skeleton,Soldier Skeleton
+call {
+    if (&questCompleteCount(62567) == 1) { #Bigfoot
+		call quest_talk payon '148 93' "c r0 c r~/Bigfoot/i"
+		}
+	if (&questCompleteCount(62666) == 1) { #Horn
+		call quest_talk payon '148 93' "c r0 c r~/Horn/i"
+		}
+	if (&questCompleteCount(62560) == 1) { #Skeleton
+		call quest_talk payon '148 93' "c r0 c r~/Skeleton/i"
+		}
+	if (&questCompleteCount(62561) == 1) { #Soldier Skeleton
+		call quest_talk payon '148 93' "c r0 c r~/Soldier Skeleton/i"
+		}	
+	}
+}
+
+automacro payon41_75 {
+exclusive 1
+BaseLevel 21..50
+timeout 120
+QuestActive 62569,62645,62562,62647 #Greatest General,Wolf,Archer Skeleton,Munak(62563,62646 WTF? Need check ? ),Bongun
+#need check questID in Munak(62563,62646 WTF?) || Need add to call || add to QuestActive
+call {
+    if (&questCompleteCount(62569) == 1) { #Greatest General
+		call quest_talk payon '148 93' "c r0 c r~/Greatest General/i"
+		}
+	if (&questCompleteCount(62645) == 1) { #Wolf
+		call quest_talk payon '148 93' "c r0 c r~/Wolf/i"
+		}
+	if (&questCompleteCount(62562) == 1) { #Archer Skeleton
+		call quest_talk payon '148 93' "c r0 c r~/Archer Skeleton/i"
+		}
+	#if (&questCompleteCount() == 1) { #Munak
+	#	call quest_talk payon '148 93' "c r0 c r~/Munak/i"
+	#	}
+	if (&questCompleteCount(62647) == 1) { #Bongun
+		call quest_talk payon '148 93' "c r0 c r~/Bongun/i"
+		}		
+	}
+}
+
+automacro payon61_100 {
+exclusive 1
+BaseLevel 61..100
+timeout 120
+QuestActive 62648,62649,62650 #Sohee,Dokebi,Nine Tail
+call {
+    if (&questCompleteCount(62648) == 1) { #Sohee
+		call quest_talk payon '148 89' "c r0 c r~/Sohee/i"
+		}
+	if (&questCompleteCount(62649) == 1) { #Dokebi
+		call quest_talk payon '148 89' "c r0 c r~/Dokebi/i"
+		}
+	if (&questCompleteCount(62650) == 1) { #Nine Tail
+		call quest_talk payon '148 89' "c r0 c r~/Nine Tail/i"
+		}
+	}
+}
+
+macro quest_talk {
+	do ai manual
+	do move $.param[0] $.param[1]
+	do talknpc $.param[3]
+	do ai auto
+}
