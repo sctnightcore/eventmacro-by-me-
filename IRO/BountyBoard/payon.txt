@@ -9,6 +9,7 @@ automacro payon1_20 {
 exclusive 1
 timeout 120
 BaseLevel 1..20
+QuestHuntCompleted 62644 1010,62565 1014,62566 1025
 QuestActive 62644,62565,62566 #willow,spore,boa
 call {
     if (&questCompleteCount(62681) == 1) { #willow
@@ -27,6 +28,7 @@ automacro payon21_50 {
 exclusive 1
 BaseLevel 21..50
 timeout 120
+QuestHuntCompleted 62567 1060,62666 1128,62560 1076,62561 1028
 QuestActive 62567,62666,62560,62561 #Bigfoot,Horn,Skeleton,Soldier Skeleton
 call {
     if (&questCompleteCount(62567) == 1) { #Bigfoot
@@ -48,8 +50,9 @@ automacro payon41_75 {
 exclusive 1
 BaseLevel 21..50
 timeout 120
+QuestHuntCompleted 62569 1277,62645 1013,62562 1016,62647 1188
 QuestActive 62569,62645,62562,62647 #Greatest General,Wolf,Archer Skeleton,Munak(62563,62646 WTF? Need check ? ),Bongun
-#need check questID in Munak(62563,62646 WTF?) || Need add to call || add to QuestActive
+#need check questID in Munak(62563,62646 WTF?) || Need add to call || add to QuestActive || add to QuestHuntCompleted
 call {
     if (&questCompleteCount(62569) == 1) { #Greatest General
 		call quest_talk payon '148 93' "c r0 c r~/Greatest General/i"
@@ -73,6 +76,7 @@ automacro payon61_100 {
 exclusive 1
 BaseLevel 61..100
 timeout 120
+QuestHuntCompleted 62648 1170,62649 1110,62650 1180
 QuestActive 62648,62649,62650 #Sohee,Dokebi,Nine Tail
 call {
     if (&questCompleteCount(62648) == 1) { #Sohee
