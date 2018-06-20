@@ -1,0 +1,131 @@
+#########################################################
+#	┌─┐┌─┐┌┬┐┌┐┌┬┌─┐┬ ┬┌┬┐┌─┐┌─┐┬─┐┌─┐
+#	└─┐│   │ │││││ ┬├─┤ │ │  │ │├┬┘├┤ 
+#	└─┘└─┘ ┴ ┘└┘┴└─┘┴ ┴ ┴ └─┘└─┘┴└─└─┘
+#
+#	add : !include ..\BountyBoard\prontera.txt
+#########################################################
+automacro prontera1_20 {
+exclusive 1
+timeout 120
+BaseLevel 1..20
+QuestHuntCompleted 62816 1063,62722 1004,62723 1012,62724 1052,62725 1167,62726 1048,62817 1094
+#Lunatic,Hornet,Roda Frog,Rocker,Savage Babe,Thief Bug Egg,Ambernite
+call {
+    if (&questCompleteCount(62816) == 1) { #Lunatic
+		call quest_talk prontera '136 225' "c r0 c r~/Lunatic/i"
+		}
+	if (&questCompleteCount(62722) == 1) { #Hornet
+		call quest_talk prontera '136 225' "c r0 c r~/Hornet/i"
+		}
+	if (&questCompleteCount(62723) == 1) { #Roda Frog
+		call quest_talk prontera '136 225' "c r0 c r~/Roda Frog/i"
+		}
+	if (&questCompleteCount(62724) == 1) { #Rocker
+		call quest_talk prontera '136 225' "c r0 c r~/Rocker/i"
+		}
+	if (&questCompleteCount(62725) == 1) { #Savage Babe
+		call quest_talk prontera '136 225' "c r0 c r~/Savage Babe/i"
+		}
+	if (&questCompleteCount(62726) == 1) { #Thief Bug Egg
+		call quest_talk prontera '136 225' "c r0 c r~/Thief Bug Egg/i"
+		}
+	if (&questCompleteCount(62817) == 1) { #Ambernite
+		call quest_talk prontera '136 225' "c r0 c r~/Ambernite/i"
+		}	
+	}
+}
+
+automacro prontera21_50 {
+exclusive 1
+BaseLevel 21..50
+timeout 120
+QuestHuntCompleted 62727 1051,62728 1175,62729 1174,62730 1019,62731 1104,62732 1057,62733 1053,62734 1054,62735 1031,62818 1055
+#Thief Bug,Tarou,Stainer,Peco Peco,Coco,Yoyo,Thief Bug Female,Thief Bug Male,Poporing,Elder Willow(need check!),Muka
+call {
+    if (&questCompleteCount(62727) == 1) { #Thief Bug
+		call quest_talk prontera '138 227' "c r0 c r~/Thief Bug/i"
+		}
+	if (&questCompleteCount(62728) == 1) { #Tarou
+		call quest_talk prontera '138 227' "c r0 c r~/Tarou/i"
+		}
+	if (&questCompleteCount(62729) == 1) { #Stainer
+		call quest_talk prontera '138 227' "c r0 c r~/Stainer/i"
+		}
+	if (&questCompleteCount(62730) == 1) { #Peco Peco
+		call quest_talk prontera '138 227' "c r0 c r~/Peco Peco/i"
+		}
+	if (&questCompleteCount(62731) == 1) { #Coco
+		call quest_talk prontera '138 227' "c r0 c r~/Coco/i"
+		}
+	if (&questCompleteCount(62732) == 1) { #Yoyo
+		call quest_talk prontera '138 227' "c r0 c r~/Yoyo/i"
+		}
+	if (&questCompleteCount(62733) == 1) { #Thief Bug Female
+		call quest_talk prontera '138 227' "c r0 c r~/Thief Bug Female/i"
+		}
+	if (&questCompleteCount(62734) == 1) { #Thief Bug Male
+		call quest_talk prontera '138 227' "c r0 c r~/Thief Bug Male/i"
+		}
+	#if (&questCompleteCount() == 1) { #Elder Willow
+	#	call quest_talk prontera '138 227' "c r0 c r~/Elder Willow/i"
+	#	}
+	if (&questCompleteCount(62818) == 1) { #Muka
+		call quest_talk prontera '138 227' "c r0 c r~/Muka/i"
+		}	
+	}
+}
+
+automacro prontera41_70 {
+exclusive 1
+BaseLevel 21..50
+timeout 120
+QuestHuntCompleted 62819 1138,62737 1100,62738 1494,62739 1166
+#Magnolia,Argos,Beetle King,Savage
+call {
+    if (&questCompleteCount(62569) == 1) { #Magnolia
+		call quest_talk prontera '140 229' "c r0 c r~/Magnolia/i"
+		}
+	if (&questCompleteCount(62645) == 1) { #Argos
+		call quest_talk prontera '140 229' "c r0 c r~/Argos/i"
+		}
+	if (&questCompleteCount(62562) == 1) { #Beetle King
+		call quest_talk prontera '140 229' "c r0 c r~/Beetle King/i"
+		}
+	if (&questCompleteCount() == 1) { #Savage
+		call quest_talk prontera '140 229' "c r0 c r~/Savage/i"
+		}
+	}
+}
+
+automacro prontera61_100 {
+exclusive 1
+BaseLevel 61..100
+timeout 120
+QuestHuntCompleted 62740 1380,62741 1035,62742 1139,62743 1037,62744 1099
+#Driller,Hunter Fly,Mantis,Side Winder,Argiope
+call {
+    if (&questCompleteCount(62648) == 1) { #Driller
+		call quest_talk prontera '142 231' "c r0 c r~/Driller/i"
+		}
+	if (&questCompleteCount(62649) == 1) { #Hunter Fly
+		call quest_talk prontera '142 231' "c r0 c r~/Hunter Fly/i"
+		}
+	if (&questCompleteCount(62650) == 1) { #Mantis
+		call quest_talk prontera '142 231' "c r0 c r~/Mantis/i"
+		}
+	if (&questCompleteCount(62650) == 1) { #Side Winder
+		call quest_talk prontera '142 231' "c r0 c r~/Side Winder/i"
+		}
+	if (&questCompleteCount(62650) == 1) { #Argiope
+		call quest_talk prontera '142 231' "c r0 c r~/Argiope/i"
+		}		
+	}
+}
+
+macro quest_talk {
+	do ai manual
+	do move $.param[0] $.param[1]
+	do talknpc $.param[3]
+	do ai auto
+}
